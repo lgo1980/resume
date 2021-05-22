@@ -187439,7 +187439,7 @@ video {
   background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
   position: fixed;
   right: 0px;
-  top: 33.333333%
+  top: 5rem
 }
 
 .navbar ul{
@@ -187454,6 +187454,17 @@ video {
   border-bottom-width: 1px;
   margin-bottom: 0.75rem;
   padding-bottom: 0.5rem
+}
+
+.navbar svg{
+  display: inline;
+  height: 1.5rem;
+  margin-right: 0px;
+  width: 1.5rem
+}
+
+.navbar p{
+  display: none
 }
 
 .title-section{
@@ -187488,7 +187499,6 @@ video {
 
 .item-list a{
   display: inline;
-  margin-left: 1.25rem;
   --tw-text-opacity: 1;
   color: rgba(30, 64, 175, var(--tw-text-opacity))
 }
@@ -187497,6 +187507,10 @@ video {
   --tw-text-opacity: 1;
   color: rgba(96, 165, 250, var(--tw-text-opacity));
   text-decoration: underline;
+}
+
+.item-list strong{
+  margin-right: 1.25rem
 }
 
 .Personal{
@@ -187534,7 +187548,6 @@ video {
 
 .Educations-Institute a{
   display: inline;
-  margin-left: 1.25rem;
   --tw-text-opacity: 1;
   color: rgba(30, 64, 175, var(--tw-text-opacity))
 }
@@ -187543,6 +187556,10 @@ video {
   --tw-text-opacity: 1;
   color: rgba(96, 165, 250, var(--tw-text-opacity));
   text-decoration: underline;
+}
+
+.Educations-Institute strong{
+  margin-right: 1.25rem
 }
 
 .Educations-date{
@@ -187559,7 +187576,6 @@ video {
 
 .Educations-date a{
   display: inline;
-  margin-left: 1.25rem;
   --tw-text-opacity: 1;
   color: rgba(30, 64, 175, var(--tw-text-opacity))
 }
@@ -187568,6 +187584,10 @@ video {
   --tw-text-opacity: 1;
   color: rgba(96, 165, 250, var(--tw-text-opacity));
   text-decoration: underline;
+}
+
+.Educations-date strong{
+  margin-right: 1.25rem
 }
 
 .Educations-career{
@@ -187583,7 +187603,6 @@ video {
 
 .Educations-career a{
   display: inline;
-  margin-left: 1.25rem;
   --tw-text-opacity: 1;
   color: rgba(30, 64, 175, var(--tw-text-opacity))
 }
@@ -187592,6 +187611,10 @@ video {
   --tw-text-opacity: 1;
   color: rgba(96, 165, 250, var(--tw-text-opacity));
   text-decoration: underline;
+}
+
+.Educations-career strong{
+  margin-right: 1.25rem
 }
 
 .Educations-state{
@@ -187607,7 +187630,6 @@ video {
 
 .Educations-state a{
   display: inline;
-  margin-left: 1.25rem;
   --tw-text-opacity: 1;
   color: rgba(30, 64, 175, var(--tw-text-opacity))
 }
@@ -187616,6 +187638,10 @@ video {
   --tw-text-opacity: 1;
   color: rgba(96, 165, 250, var(--tw-text-opacity));
   text-decoration: underline;
+}
+
+.Educations-state strong{
+  margin-right: 1.25rem
 }
 
 .skills {
@@ -187640,7 +187666,6 @@ video {
 
 .skills-list a{
   display: inline;
-  margin-left: 1.25rem;
   --tw-text-opacity: 1;
   color: rgba(30, 64, 175, var(--tw-text-opacity))
 }
@@ -187649,6 +187674,10 @@ video {
   --tw-text-opacity: 1;
   color: rgba(96, 165, 250, var(--tw-text-opacity));
   text-decoration: underline;
+}
+
+.skills-list strong{
+  margin-right: 1.25rem
 }
 
 @media(min-width:640px) {
@@ -187672,5 +187701,13 @@ video {
   .main-container{
     padding-left: 12rem;
     padding-right: 12rem
+  }
+
+  .navbar p{
+    display: inline
+  }
+
+  .navbar svg{
+    margin-right: 0.5rem
   }
 }

@@ -15,13 +15,64 @@
 	</div>
 	<div id="nav" class="navbar">
 		<ul>
-			<li><a href="#">Video resume</a></li>
-			<li><a href="public/files/LeonardoOlmedo.pdf" download="LeonardoOlmedoResume.pdf">Download resume in PDF</a>
+			<li>
+				<a href="#" title="View Video resume">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+					</svg>
+					<p>Video resume</p>
+				</a>
 			</li>
-			<li><a href="#Personal">Personal</a></li>
-			<li><a href="#Education">Education</a></li>
-			<li><a href="#Employment">Employment</a></li>
-			<li><a href="#skills">Skills</a></li>
+			<li>
+				<a href="public/files/LeonardoOlmedo.pdf" download="LeonardoOlmedoResume.pdf" title="Download resume">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+					</svg>
+					<p>Download resume in PDF</p>
+				</a>
+			</li>
+			<li>
+				<a href="#Personal" title="View personal information">
+					<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+						stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" />
+					</svg>
+					<p>Staff</p>
+				</a>
+			</li>
+			<li>
+				<a href="#Education" title="View academic information">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path d="M12 14l9-5-9-5-9 5 9 5z" />
+						<path
+							d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+					</svg>
+					<p>Education</p>
+				</a>
+			</li>
+			<li>
+				<a href="#Employment" title="View employment information">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+					</svg>
+					<p>Employment</p>
+				</a>
+			</li>
+			<li>
+				<a href="#skills" title="View skills">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+					</svg>
+					<p>Skills</p>
+				</a>
+			</li>
 		</ul>
 	</div>
 	<div id="main">
@@ -52,7 +103,7 @@
 							</li>
 							<li class="item-list">
 								<strong>Phone:</strong>
-								<p>15-3356-4224</p>
+								<p>+54 9 11 3356-4224</p>
 							</li>
 							<li class="item-list">
 								<strong>Location:</strong>
@@ -81,11 +132,15 @@
 							</li>
 							<li class="item-list">
 								<strong>Github Profile:</strong>
-								<a href="https://github.com/lgo1980" target="_blank">lgo1980</a>
+								<a href="https://github.com/lgo1980" target="_blank"><img
+										src="public/images/GitHub-Mark-32px.png" alt=""
+										class="inline w-6 h-6 mr-2">lgo1980</a>
 							</li>
 							<li class="item-list">
 								<strong>Gitlab Profile:</strong>
-								<a href="https://gitlab.com/lgo80" target="_blank">lgo80</a>
+								<a href="https://gitlab.com/lgo80" target="_blank"><img
+									src="public/images/gitlab-icon-rgb.png" alt=""
+									class="inline w-8 h-8 mr-2">lgo80</a>
 							</li>
 						</ul>
 					</div>
