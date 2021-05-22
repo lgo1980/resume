@@ -7,167 +7,299 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=eagle">
 	<link href="public/css/styles.css" rel="stylesheet">
-	<title>Leonardo Olmedo's Portfolio</title>
+	<title>Leonardo Olmedo's Profile</title>
 </head>
 
 <body>
 	<div id="top" class="pt-3 bg-red-700 h-14">
-		<h1 class="text-2xl text-center">Leonardo Olmedo's Portfolio</h1>
+		<h1 class="text-2xl text-center">Leonardo Olmedo's Profile</h1>
 	</div>
-	<div id="nav" class="fixed right-0 h-40 bg-blue-600 top-1/3">
-		<h3 class="text-red-300">lalsalaslslaal</h3>
+	<div id="nav" class="navbar">
+		<ul>
+			<li><a href="#">Video resume</a></li>
+			<li><a href="public/files/LeonardoOlmedo.pdf"
+					download="LeonardoOlmedoResume.pdf">Download resume in PDF</a></li>
+			<li><a href="#Personal">Personal</a></li>
+			<li><a href="#Education">Education</a></li>
+			<li><a href="#Employment">Employment</a></li>
+			<li><a href="#skills">Skills</a></li>
+		</ul>
 	</div>
 	<div id="main">
-		<div class="container px-20 mx-auto">
-			<section id="personal" class="ml-10">
-				<div class="pl-32 mt-5">
-					<dl class="grid grid-cols-1 gap-x-5 gap-y-5 lg:space-y-0 lg:grid lg:grid-cols-3">
-						<div class="rounded-lg ring ring-indigo-600">
-							<div class="card">
-								<div class="mb-5 card-header">
-									<h3 class="mt-2 text-2xl font-extrabold tracking-wide text-center text-gray-900">
-										Leonardo Olmedo
-									</h3>
-								</div>
-								<div class="mx-10 mb-5 card-body">
-									<img src="public/images/leoPerfil.jpg" class="card-img-top" alt="...">
-								</div>
-								<div class="p-5 text-center border-t-2 border-indigo-500 card-footer">
-									My profession is systems analyst, I am a full-stack programmer. I developed
-									projects in
-									PHP,
-									Java and Visual Basic 6.
-								</div>
+		<div class="main-container">
+			<section id="Personal" class="sections">
+				<div class="Personal">
+					<div class="col-span-1 lg:col-span-5">
+						<h3 class="title-section">Personal Information</h3>
+					</div>
+					<div class="col-span-1 ml-20 lg:col-span-2">
+						<div class="card">
+							<div class="mx-10 mb-5 card-body">
+								<img src="public/images/leoPerfil.jpg" class="card-img-top" alt="...">
+							</div>
+							<div class="p-5 text-center border-t-2 border-indigo-500 card-footer">
+								My profession is systems analyst, I am a full-stack programmer. I developed
+								projects in
+								PHP,
+								Java and Visual Basic 6.
 							</div>
 						</div>
-						<div class="w-2/3 px-10 py-5 rounded-lg ring ring-indigo-600 lg:col-span-2">
-							<h3 class="mb-4 text-2xl font-extrabold tracking-wide text-center">
-								Personal information
-							</h3>
-							<ul>
-								<li class="mb-3">
-									<strong>
-										Age:
-									</strong>
-									<p class="inline ml-5">
-										41
-									</p>
+					</div>
+					<div class="col-span-1 ml-20 lg:col-span-3">
+						<ul>
+							<li class="item-list">
+								<strong>Name:</strong>
+								<p>Leonardo Gabriel Olmedo</p>
+							</li>
+							<li class="item-list">
+								<strong>Phone:</strong>
+								<p>15-3356-4224</p>
+							</li>
+							<li class="item-list">
+								<strong>Location:</strong>
+								<p>1419 Villa Pueyrredon</p>
+							</li>
+							<li class="item-list">
+								<strong>E-mail:</strong>
+								<p>leolma1980@gmail.com</p>
+							</li>
+							<li class="item-list">
+								<strong>Date of birth:</strong>
+								<p>30 de enero de 1980</p>
+							</li>
+							<li class="item-list">
+								<strong>Nationality:</strong>
+								<p>Argentina</p>
+							</li>
+							<li class="item-list">
+								<strong>Gender:</strong>
+								<p>Man</p>
+							</li>
+							<li class="item-list">
+								<strong>Linkedin profile:</strong>
+								<a href="https://www.linkedin.com/in/leonardo-olmedo-658716b6/" target="_blank">View
+									profile</a>
+							</li>
+							<li class="item-list">
+								<strong>Github Profile:</strong>
+								<a href="https://github.com/lgo1980" target="_blank">lgo1980</a>
+							</li>
+							<li class="item-list">
+								<strong>Gitlab Profile:</strong>
+								<a href="https://gitlab.com/lgo80" target="_blank">lgo80</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section id="Education" class="sections">
+				<div class="grid grid-cols-1">
+					<div class="">
+						<h3 class="title-section">Academic Information</h3>
+					</div>
+					<div class="Educations">
+						<div class="Educations-Institute">
+							<strong>Institute:</strong>
+							<p>Universidad Tecnológica Nacional</p>
+						</div>
+						<div class="Educations-date">
+							<p>August 2019 - Currently</p>
+						</div>
+						<div class="Educations-career">
+							<strong>Career:</strong>
+							<p>Systems engineering</p>
+						</div>
+						<div class="Educations-state">
+							<strong>State:</strong>
+							<p>In course</p>
+						</div>
+					</div>
+					<div class="Educations">
+						<div class="Educations-Institute">
+							<strong>Institute:</strong>
+							<p>University Language Center</p>
+						</div>
+						<div class="Educations-date">
+							<p>March 2015 - July 2018</p>
+						</div>
+						<div class="Educations-career">
+							<strong>Career:</strong>
+							<p>English level 3</p>
+						</div>
+						<div class="Educations-state">
+							<strong>State:</strong>
+							<p>Graduated</p>
+						</div>
+					</div>
+					<div class="Educations">
+						<div class="Educations-Institute">
+							<strong>Institute:</strong>
+							<p>IT Education</p>
+						</div>
+						<div class="Educations-date">
+							<p>February 2014 - December 2014</p>
+						</div>
+						<div class="Educations-career">
+							<strong>Career:</strong>
+							<p>Full Stack Java Developer</p>
+						</div>
+						<div class="Educations-state">
+							<strong>State:</strong>
+							<p>Graduated</p>
+						</div>
+					</div>
+					<div class="Educations">
+						<div class="Educations-Institute">
+							<strong>Institute:</strong>
+							<p>IT Education</p>
+						</div>
+						<div class="Educations-date">
+							<p>February 2013 - December 2013</p>
+						</div>
+						<div class="Educations-career">
+							<strong>Career:</strong>
+							<p>Full Stack PHP Web Developer</p>
+						</div>
+						<div class="Educations-state">
+							<strong>State:</strong>
+							<p>Graduated</p>
+						</div>
+					</div>
+					<div class="Educations">
+						<div class="Educations-Institute">
+							<strong>Institute:</strong>
+							<p>Instituto de Estudios Superiores de Buenos Aires</p>
+						</div>
+						<div class="Educations-date">
+							<p>March 2001 - December 2003</p>
+						</div>
+						<div class="Educations-career">
+							<strong>Career:</strong>
+							<p>Systems analyst</p>
+						</div>
+						<div class="Educations-state">
+							<strong>State:</strong>
+							<p>Graduated</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="Employment" class="sections">
+				<div class="grid grid-cols-1">
+					<div class="">
+						<h3 class="title-section">Employment information</h3>
+					</div>
+					<div class="Educations">
+						<div class="Educations-Institute">
+							<strong>Company:</strong>
+							<p>Olmedos</p>
+						</div>
+						<div class="Educations-date">
+							<p>January 2001 - Currently</p>
+						</div>
+						<div class="Educations-career">
+							<strong>Assignment:</strong>
+							<p>IT Analyst</p>
+						</div>
+						<div class="Educations-state">
+							<strong>Responsibility:</strong>
+							<p>My job consists of constant maintenance, updating the management system for sales, stock
+								control, reporting and website maintenance. management system, stock control, reporting
+								and maintenance of the website.</p>
+						</div>
+					</div>
+					<div class="Educations">
+						<div class="Educations-Institute">
+							<strong>Mode:</strong>
+							<p>Freelance</p>
+						</div>
+						<div class="Educations-date">
+							<p>January 2015 - August 2018</p>
+						</div>
+						<div class="Educations-career">
+							<strong>Assignment:</strong>
+							<p>IT Analyst</p>
+						</div>
+						<div class="Educations-state">
+							<strong>Developments:</strong>
+							<ul class="ml-16 list-disc">
+								<li>
+									<div class="my-3">
+										<strong>Web Page:</strong>
+										<p><a href="http://www.olmedos.com.ar/futfun/web" target="_blank">Futfun</a></p>
+									</div>
+									<div>
+										<strong>Description:</strong>
+										<p>Futfun is a web application designed in symfony where you play to guess the
+											results of soccer results of soccer championships, and other competitions.
+											The languages used for the development were:
+											PHP, Javascript, HTML, CSS, MySql, framework: Symfony, Bootstrap.</p>
+									</div>
 								</li>
-								<li class="mb-3">
-									<strong>
-										Phone:
-									</strong>
-									<p class="inline ml-5">
-										15-3356-4224
-									</p>
+								<li>
+									<div class="my-3">
+										<strong>Web Page:</strong>
+										<p><a href="http://www.chatsforall.com.ar" target="_blank">Chatsforall</a> - Not
+											active</p>
+									</div>
+									<div>
+										<strong>Description:</strong>
+										<p>Chatsforall was a chat for communication between people who want to interact
+											or get to know each other! or get to know each other! The languages I used
+											for the development of the application were: PHP, Javascript, CSS, MySql.
+											were: PHP, Javascript, CSS, MySql, I used the socket.io technology managed
+											with the node.js library. the node.js library.</p>
+									</div>
 								</li>
-								<li class="mb-3">
-									<strong>
-										Location:
-									</strong>
-									<p class="inline ml-5">
-										1419 Villa Pueyrredon
-									</p>
-								</li>
-								<li class="mb-3">
-									<strong>
-										E-mail:
-									</strong>
-									<p class="inline ml-5">
-										leolma1980@gmail.com
-									</p>
-								</li>
-								<li class="mb-3">
-									<strong>
-										Date of birth:
-									</strong>
-									<p class="inline ml-5">
-										30 de enero de 1980
-									</p>
-								</li>
-								<li class="mb-3">
-									<strong>
-										Birthplace:
-									</strong>
-									<p class="inline ml-5">
-										Ciudad Autonoma de Buenos Aires
-									</p>
-								</li>
-								<li class="mb-3">
-									<strong>
-										Nationality:
-									</strong>
-									<p class="inline ml-5">
-										Argentina
-									</p>
-								</li>
-								<li class="mb-3">
-									<strong>
-										Civil Status:
-									</strong>
-									<p class="inline ml-5">
-										Married
-									</p>
-								</li>
-								<li class="mb-3">
-									<strong>
-										Gender:
-									</strong>
-									<p class="inline ml-5">
-										Man
-									</p>
-								</li>
-								<li class="mb-3">
-									<strong>
-										Linkedin profile:
-									</strong>
-									<a href="https://www.linkedin.com/in/leonardo-olmedo-658716b6/"
-										class="inline ml-5 text-blue-800 hover:text-blue-400 hover:underline"
-										target="_blank">
-										View profile
-									</a>
-								</li>
-								<li class="mb-3">
-									<strong>
-										Github Profile:
-									</strong>
-									<a href="https://github.com/lgo1980"
-										class="inline ml-5 text-blue-800 hover:text-blue-400 hover:underline"
-										target="_blank">
-										View profile
-									</a>
-								</li>
-								<li class="mb-3">
-									<strong>
-										Gitlab Profile:
-									</strong>
-									<a href="https://gitlab.com/lgo80"
-										class="inline ml-5 text-blue-800 hover:text-blue-400 hover:underline"
-										target="_blank">
-										View profile
-									</a>
+								<li>
+									<div class="my-3">
+										<strong>Company:</strong>
+										<p><a href="www.olicart.com.ar" target="_blank">Olicart SA</a></p>
+									</div>
+									<div>
+										<strong>Description:</strong>
+										<p>Design, programming and development of a management system covering ABM of
+											customers and orders. customers and orders. Languages used: Visual Basic 6
+											and MS access.</p>
+									</div>
 								</li>
 							</ul>
 						</div>
-					</dl>
+					</div>
 				</div>
 			</section>
-			<section id="Educacion">
-				<div class="pl-32 mt-5">
-					<dl class="grid grid-cols-1 gap-x-5 gap-y-5 lg:space-y-0 lg:grid lg:grid-cols-3">
-						<div class="rounded-lg ring ring-indigo-600 lg:col-span-3">
-							<div class="mx-20">
-								sdsddsds
-							</div>
+			<section id="skills" class="sections">
+				<div class="grid grid-cols-1">
+					<div class="">
+						<h3 class="title-section">Skills</h3>
+					</div>
+					<div class="skills">
+						<div class="skills-list">
+							<ul class="list-disc">
+								<li class="item-list">
+									<strong>Languages:</strong>
+									<p>PHP 8, JAVA, Javascript, HTML, CSS, Visual Basic 6 and C++</p>
+								</li>
+								<li class="item-list">
+									<strong>Frameworks:</strong>
+									<p>Symfony, Laravel, Hibernate, Spring, Node.js, SASS, Typescript and Jquery</p>
+								</li>
+								<li class="item-list">
+									<strong>Databases:</strong>
+									<p>MySql</p>
+								</li>
+								<li class="item-list">
+									<strong>Version control:</strong>
+									<p>Github and Gitlab</p>
+								</li>
+								<li class="item-list">
+									<strong>Operating systems:</strong>
+									<p>Windows and Linux</p>
+								</li>
+							</ul>
 						</div>
-					</dl>
+					</div>
 				</div>
-			</section>
-			<section id="s3">
-
-			</section>
-			<section id="s4">
-
 			</section>
 		</div>
 	</div>
