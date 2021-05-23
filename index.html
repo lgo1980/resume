@@ -16,13 +16,13 @@
 	<div id="nav" class="navbar">
 		<ul>
 			<li>
-				<a href="#" title="View Video resume">
+				<button href="#" title="View Video resume" id="viewVideo">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
 							d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
 					</svg>
 					<p>Video resume</p>
-				</a>
+				</button>
 			</li>
 			<li>
 				<a href="public/files/LeonardoOlmedo.pdf" download="LeonardoOlmedoResume.pdf" title="Download resume">
@@ -79,11 +79,11 @@
 		<div class="main-container">
 			<section id="Personal" class="sections">
 				<div class="Personal">
-					<div class="col-span-1 lg:col-span-5">
+					<div class="Personal-header">
 						<h3 class="title-section">Personal Information</h3>
 					</div>
-					<div class="col-span-1 ml-20 lg:col-span-2">
-						<div class="card">
+					<div class="Personal-photo">
+						<div class="w-4/5 mx-auto lg:w-100 card">
 							<div class="mx-10 mb-5 card-body">
 								<img src="public/images/LeonardoOlmedo.jpeg" class="card-img-top" alt="...">
 							</div>
@@ -128,8 +128,8 @@
 							<li class="item-list">
 								<strong>Linkedin profile:</strong>
 								<a href="https://www.linkedin.com/in/leonardo-olmedo-658716b6/" target="_blank"><img
-									src="public/images/LI-In-Bug.png" alt=""
-									class="inline w-6 h-6 mr-2">leonardo-olmedo-658716b6</a>
+										src="public/images/LI-In-Bug.png" alt=""
+										class="inline w-6 h-6 mr-2">leonardo-olmedo-658716b6</a>
 							</li>
 							<li class="item-list">
 								<strong>Github Profile:</strong>
@@ -140,8 +140,8 @@
 							<li class="item-list">
 								<strong>Gitlab Profile:</strong>
 								<a href="https://gitlab.com/lgo80" target="_blank"><img
-									src="public/images/gitlab-icon-rgb.png" alt=""
-									class="inline w-8 h-8 mr-2">lgo80</a>
+										src="public/images/gitlab-icon-rgb.png" alt=""
+										class="inline w-8 h-8 mr-2">lgo80</a>
 							</li>
 						</ul>
 					</div>
@@ -155,9 +155,8 @@
 					<div class="Educations">
 						<div class="Educations-Institute">
 							<strong>Institute:</strong>
-							<a href="https://utn.edu.ar/es/" target="_blank"><img
-								src="public/images/logo-utn.png" alt=""
-								class="inline mr-2 w-7 h-7">Universidad Tecnológica Nacional</a>
+							<a href="https://utn.edu.ar/es/" target="_blank"><img src="public/images/logo-utn.png"
+									alt="" class="inline mr-2 w-7 h-7">Universidad Tecnológica Nacional</a>
 						</div>
 						<div class="Educations-date">
 							<p>August 2019 - Currently</p>
@@ -174,9 +173,8 @@
 					<div class="Educations">
 						<div class="Educations-Institute">
 							<strong>Institute:</strong>
-							<a href="https://cui.edu.ar/" target="_blank"><img
-								src="public/images/logo-cui.jpg" alt=""
-								class="inline h-10 mr-2 w-14">University Language Center</a>
+							<a href="https://cui.edu.ar/" target="_blank"><img src="public/images/logo-cui.jpg" alt=""
+									class="inline h-10 mr-2 w-14">University Language Center</a>
 						</div>
 						<div class="Educations-date">
 							<p>March 2015 - July 2018</p>
@@ -194,8 +192,8 @@
 						<div class="Educations-Institute">
 							<strong>Institute:</strong>
 							<a href="https://www.educacionit.com/" target="_blank"><img
-								src="public/images/logo-it-educacionit.svg" alt=""
-								class="inline w-24 h-12 mr-2">IT Education</a>
+									src="public/images/logo-it-educacionit.svg" alt="" class="inline w-24 h-12 mr-2">IT
+								Education</a>
 						</div>
 						<div class="Educations-date">
 							<p>February 2014 - December 2014</p>
@@ -213,8 +211,8 @@
 						<div class="Educations-Institute">
 							<strong>Institute:</strong>
 							<a href="https://www.educacionit.com/" target="_blank"><img
-								src="public/images/logo-it-educacionit.svg" alt=""
-								class="inline w-24 h-12 mr-2">IT Education</a>
+									src="public/images/logo-it-educacionit.svg" alt="" class="inline w-24 h-12 mr-2">IT
+								Education</a>
 						</div>
 						<div class="Educations-date">
 							<p>February 2013 - December 2013</p>
@@ -232,8 +230,8 @@
 						<div class="Educations-Institute">
 							<strong>Institute:</strong>
 							<a href="https://www.educacionit.com/" target="_blank"><img
-								src="public/images/logo-ESBA.png" alt=""
-								class="inline mr-2 w-7 h-7">Instituto de Estudios Superiores de Buenos Aires</a>
+									src="public/images/logo-ESBA.png" alt="" class="inline mr-2 w-7 h-7">Instituto de
+								Estudios Superiores de Buenos Aires</a>
 						</div>
 						<div class="Educations-date">
 							<p>March 2001 - December 2003</p>
@@ -371,6 +369,49 @@
 	<div class="foot">
 
 	</div>
+	<!-- This example requires Tailwind CSS v2.0+ -->
+	<div class="inset-0 z-10 hidden overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true"
+		id="overlay">
+		<div class="flex items-end justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+			<div class="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-75" aria-hidden="true"></div>
+			<!-- This element is to trick the browser into centering the modal contents. -->
+			<span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+			<div
+				class="inline-block overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+				<div class="px-4 pt-5 pb-4 bg-gray-100 sm:p-6 sm:pb-4">
+					<div class="sm:flex sm:items-start">
+						<video class="ml-2 border-4 border-gray-500 rounded-lg sm:ml-14" controls>
+							<source src="public/videos/Leonardo Olmedo.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</div>
+				</div>
+				<div class="px-4 py-3 bg-gray-300 sm:px-6 sm:flex sm:flex-row-reverse">
+					<button type="button" id="close-modal"
+						class="inline-flex justify-center w-full px-4 py-2 text-base font-medium text-white bg-red-600 border border-transparent rounded-md shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm">
+						Close
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		window.addEventListener('DOMContentLoaded', () => {
+			const overlay = document.querySelector('#overlay')
+			const delBtn = document.querySelector('#viewVideo')
+			const closeBtn = document.querySelector('#close-modal')
+
+			const toggleModal = () => {
+				overlay.classList.toggle('hidden')
+				overlay.classList.toggle('fixed')
+			}
+
+			delBtn.addEventListener('click', toggleModal)
+
+			closeBtn.addEventListener('click', toggleModal)
+		})
+	</script>
 </body>
 
 </html>
